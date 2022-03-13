@@ -1,0 +1,653 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,h2,h3{
+  text-transform: uppercase;
+}
+
+.lg-heading{
+  font-size: 3.2rem;
+  font-weight: 700;;
+}
+
+.md-heading{
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+.sm-heading{
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.red{
+  color: red;
+}
+
+.white{
+  color: #fff;
+}
+
+.dark{
+  color: #000;
+}
+
+.grey{
+  color: #cdcdcd;
+}
+
+.container{
+  max-width: 1200px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.button{
+  background-color: #117964;
+  font-size: 1.2rem;
+  border-radius: 2.2rem;
+  outline: none;
+  padding: 1.3rem 1.3rem;
+  width: 10rem;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.btn{
+  background-color: #117964;
+  font-size: 1.2rem;
+  border-radius: 2.2rem;
+  outline: none;
+  padding: 1.3rem 1.3rem;
+}
+
+/* ##################### For Desktop NavBar ################################ */
+
+.nav-bar input[type='checkbox'],
+.nav-bar .hamberger-menu{
+  display: none;
+}
+
+.header{
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  opacity: 0.85;
+  box-shadow: 5px 5px 10px rgba(170, 170, 170, 0.781);
+}
+
+.nav-bar{
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-bar .logo{
+  order: 1;
+  padding: 1rem;
+}
+
+.nav-bar a{
+  text-decoration: none;
+  transition: color 0.2 s ease-in;
+}
+
+.nav-bar .menu-items a:hover{
+  color: #117964;
+  padding-bottom: 0.3rem;
+  border-bottom: 2px solid #117964;
+}
+
+.nav-bar a:link,
+.nav-bar a:visited{
+  color: black;
+}
+
+.nav-bar li{
+  list-style-type: none;
+  margin-left: 1rem;
+  margin-top: 1.8rem;
+  font-size: 1.5rem;
+}
+
+.nav-bar .menu-items{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 2rem;
+  order: 2;
+}
+
+.main{
+  height: 50vh;
+  background: linear-gradient(rgba(235, 232, 232, 0.425), rgba(219, 217, 217, 0.425)),url(/img/img/header-image2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-btn{
+  width: 10rem;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.3rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.main .menu-btn:hover{
+  background-color: #25685a;
+}
+
+.learn-more-btn{
+  transition: all 0.2s ease-in-out;
+}
+
+.learn-more-btn:hover{
+  background-color: #25685a;
+}
+
+.main .main-heading{
+  font-weight: 700;
+}
+
+.main p{
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.about{
+  border: 2px solid #fff;
+  background-color: #f7f7f5;
+}
+
+.about-section{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-section .about-left h1{
+  font-weight: 700;
+  margin-top: 1rem;
+  line-height: 3.5rem;
+}
+
+.about-section .about-left{
+  flex: 1 1 400px;
+  padding: 3rem;
+  margin: auto;
+  background-color: #f7f7f5;
+  transform: translateX(-150%);
+  animation: about-left-text 0.7s ease-in-out forwards;
+}
+
+@keyframes about-left-text{
+  100%{
+    transform: translateX(0);
+  }
+}
+
+.about-right{
+  flex: 1 1 400px;
+  padding: 3rem;
+  transform: translateX(150%);
+  animation: about-right-img 0.7s ease-in-out forwards;
+}
+
+@keyframes about-right-img{
+  100%{
+    transform: translateX(0);
+  }
+}
+
+.about .about-heading{
+  padding-top: 1rem;
+}
+
+.about .about-paragraph{
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 4.5rem;
+}
+
+.about-left p{
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+.about .about-right img{
+  display: block;
+  height: 400px;
+  max-width: 100%;
+  object-fit: cover; 
+  object-position: right;  /* Becuase we want majorly the right side of the image when we shrink the screen size */
+}
+
+.category{
+  margin-top: 4rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.category h2{
+  margin-bottom: 3rem;
+}
+
+.img-section{
+  display: flex;
+  justify-content: space-between;
+}
+
+.img-section img{
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  max-height: 290px;
+}
+
+.image-container{
+  position: relative;
+}
+
+.image-container .img-content{
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.image-container::after{
+  content: '';
+  display: block;
+  background-color: rgba(0, 0, 0, 0.856);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  z-index: 1;
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: 100% 100%;
+  transition: all 0.2s ease-in-out;
+}
+
+.image-container:hover::after{
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+.image-container:hover .img-content{
+  opacity: 1;
+  top: 50%;
+}
+
+.category h2{
+  font-size: 2.2rem;
+}
+
+.food-menu{
+  margin-top: 4rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.food-menu h1{
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+.display-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.display-container .text-side{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: flex-start;
+  width: 50%;
+  padding-left: 1rem;
+}
+
+.img-display{
+  display: flex;
+  margin-bottom: 1.5rem;
+  justify-content: center;
+  margin-left: 10rem;
+}
+
+.display-container h2{
+  font-weight: 500;
+  text-transform: none;
+  color: #555;
+}
+
+.display-container .menu-details{
+  text-align: left;
+  font-size: 1.1rem;
+  padding-top: 0.3rem;
+  color: #666;
+}
+
+.display-container .menu-price{
+  padding-top: 0.5rem;
+  text-align: left;
+  color: #117964;
+  font-weight: 700;
+}
+
+.display-container img{
+  border-radius: 50%;
+  height: 170px;
+  width: 170px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.checked{
+  color: orange;
+}
+
+.testimony{
+  background-color: #cdcdcd46;
+  margin-top: 3rem;
+}
+
+.testimony h1{
+  font-size: 2.2rem;
+  font-weight: 700;
+  padding-top: 5rem;
+  margin-bottom: 0.5rem;
+  color: rgb(63, 63, 63);
+  text-align: center;
+  text-transform: none;
+}
+
+.testimony-container{
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 3rem;
+}
+
+.testimony-content-container{
+  text-align: center;  /*Always use text-align: center and margin-auto inside the flex items*/
+  margin: auto;
+  padding: 2rem;
+}
+
+.testimony-content-container p{
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+.testimony-content-container img{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-top: 1rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+.stars{
+  font-size: 1.8rem;
+}
+
+.stars, .testimony-img{
+  text-align: center;
+}
+
+.contact{
+  background-color: #cdcdcd91;
+}
+
+.contact-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 5rem;
+}
+
+.contact-container .text{
+  display: block;
+  width: 98%;
+  padding: 1rem 0;
+  margin: 1rem  0 1rem 0.5rem;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: solid;
+}
+
+.text:focus{
+  outline: none;
+}
+
+.contact-content{
+  background-color: #fff;;
+  width: 50%;
+}
+
+.contact-heading{
+  padding: 1rem;
+  padding-left: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: #555;
+  font-size: 2.2rem;
+}
+
+.contact-img{
+  width: 50%;
+}
+
+.contact-img img{
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.contact-btn{
+  margin-left: 0.5rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  border: none;
+}
+
+.contact-btn:hover{
+  background-color: #25685a;
+}
+
+.footer{
+  background-color: #555;
+  text-align: center;
+  padding: 3rem;
+  color: #fff;
+}
+
+.footer h1{
+  text-transform: none;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+
+/* ################################################## Media Queries ###################################################*/
+
+@media(max-width: 760px){
+  
+  .nav-bar input[type='checkbox'],
+  .nav-bar .hamberger-menu {
+    display: block;
+  }
+
+  .header{
+    opacity: 0.95;
+  }
+
+  .nav-bar{
+    display: block;
+    position: relative;
+    height: 64px;
+  }
+
+  .nav-bar input[type='checkbox']{
+    position: absolute;
+    width: 40px;
+    height: 32px;
+    margin-top: 1rem;
+    z-index: 2;
+    top: 10px;
+    left: 16px;
+    opacity: 0;
+  }
+
+  .nav-bar .hamberger-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+    z-index: 1;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+
+  .nav-bar .hamberger-menu .lines{
+    width: 100%;
+    background-color: #000;
+    border: 2px solid black;
+  }
+
+  .nav-bar .hamberger-menu .line1{
+    transform-origin: 0% 0%;
+  }
+  .nav-bar .hamberger-menu .line2{
+    transform-origin: 0% 0%;
+  }
+  .nav-bar .hamberger-menu .line3{
+    transform-origin: 0% 100%;
+  }
+
+  .nav-bar .menu-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100vh;
+    max-width: 300px;
+    background-color: #fff;
+    padding-top: 5rem;
+    padding-left: 2.5rem;
+    margin-left: -18px;
+    /* transition: transform 0.2s ease-in-out; */
+    transform: translateX(-350px);
+  }
+
+  .nav-bar .logo{
+    position: absolute;
+    font-size: 3rem;
+    top: 7px;
+    right: 15px;
+  }
+
+  .nav-bar input[type="checkbox"]:checked ~ .menu-items{
+    transform: translateX(0);
+  }
+
+  .nav-bar input[type="checkbox"]:checked ~ .hamberger-menu .line1{
+    transform: rotate(45deg);
+  }
+
+  .nav-bar input[type="checkbox"]:checked ~ .hamberger-menu .line2{
+    opacity: 0;
+  }
+
+  .nav-bar input[type="checkbox"]:checked ~ .hamberger-menu .line3{
+    transform: rotate(-45deg);
+  }
+
+  .img-section{
+    flex-direction: column;
+  }
+
+  .img-section img{
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width:500px){
+  html{
+    font-size: 50%;
+  }
+
+  .testimony-container{
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+  }
+
+  .img-display img{
+    margin: auto;
+    text-align: center;
+  }
+
+  .img-display{
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+  }
+
+  .display-container .text-side {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .contact-container{
+    flex-direction: column;
+  }
+
+  .contact-container .contact-img{
+    width: 100%;
+  }
+
+  .contact-container .contact-content{
+    width: 100%;
+  }
+}
+
+
+
+
